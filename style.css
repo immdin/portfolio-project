@@ -1,0 +1,259 @@
+:root {
+    --btnhover: #803bff;
+    --primary-color: #965ffa;
+    --secondary-color: #f5f2fe;
+    --box-shadow: 5px 10px 20px rgba(155, 152, 152, 0.3);
+}
+
+body {
+    margin-top: 100px !important;
+}
+
+.bg-violet {
+    background-color: var(--primary-color);
+}
+
+h2,
+h1,
+h3 {
+    margin: 0%;
+    text-align: center;
+}
+
+.crm {
+    margin-bottom: 5px;
+    width: 30px;
+    height: 20px;
+    border-radius: 20%;
+}
+
+.text-1 {
+    font-size: 90px;
+    color: var(--primary-color);
+
+}
+
+.text-1:hover {
+    text-shadow: var(--box-shadow);
+}
+
+.text-2 {
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(117, 116, 116);
+}
+
+.text-3 {
+    font-size: 24px;
+    opacity: 0.7;
+}
+
+.navigation-links {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.links {
+    margin-top: 40px;
+    display: block;
+    border-radius: 4px;
+    margin: 20px;
+    border: 4px solid #8443fc;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+}
+
+.links:hover {
+    border: 4px solid #915fec;
+    background-color: var(--btnhover);
+    color: white;
+}
+
+.navigation-links a {
+    border-radius: 4px;
+    margin: 20px;
+    border: 4px solid #8443fc;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.about-link {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.contact-link {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.navigation-links a:hover {
+    border: 4px solid #915fec;
+    background-color: var(--btnhover);
+    color: white;
+}
+
+.homepage-link {
+    color: var(--primary-color);
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.about-paragraphs {
+    margin: 30px 40px;
+}
+
+.about-paragraphs p {
+    margin: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 30px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.email:hover {
+    text-decoration: underline;
+    color: #7f3bfd;
+}
+
+.homepage-link:hover {
+    text-decoration: underline;
+    color: #7f3bfd;
+}
+
+img {
+    width: 90%;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    .text-1 {
+        font-size: 60px;
+    }
+
+    .text-2 {
+        font-size: 30px;
+    }
+
+    .text-3 {
+        font-size: 18px;
+    }
+
+    .crm {
+        margin-bottom: 5px;
+        width: 19px;
+        height: 14px;
+        border-radius: 10%;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .text-1 {
+        font-size: 40px;
+    }
+
+    .text-2 {
+        font-size: 25px;
+    }
+
+    .text-3 {
+        font-size: 12px;
+    }
+
+    .crm {
+        margin-bottom: 5px;
+        width: 15px;
+        height: 10px;
+        border-radius: 10%;
+    }
+
+    p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    img {
+        width: 60%;
+
+    }
+
+    .about-paragraphs {
+        margin: 5px 20px;
+    }
+
+    .links {
+        display: block;
+        max-width: 70%;
+        border-radius: 2px;
+        margin: 5px auto;
+        padding: 10px 5px;
+
+    }
+
+    .navigation-links {
+        margin: 15px;
+        font-size: 13px;
+
+
+
+    }
+
+
+    .navigation-links a {
+        border-radius: 2px;
+        margin: 10px;
+
+        padding: 13px 7px;
+
+    }
+}
+
+@media (min-width: 1300px) {
+    .crm {
+        margin-bottom: 5px;
+        width: 27px;
+        height: 19px;
+        border-radius: 10%;
+    }
+
+    .about-paragraphs {
+        margin: 35px 45px;
+
+    }
+
+    img {
+        width: 80%;
+
+    }
+
+
+}

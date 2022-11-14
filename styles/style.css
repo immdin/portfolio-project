@@ -23,9 +23,9 @@ h3 {
 
 
 .crm {
-    margin-bottom: 8px;
-    width: 25px;
-    height: 19px;
+    margin-bottom: 3px;
+    width: 22px;
+    height: 16px;
     border-radius: 20%;
 }
 
@@ -153,7 +153,50 @@ img {
     margin-bottom: 10px;
 }
 
-@media (max-width: 900px) {
+
+.about-section {
+    padding: 160px 20px;
+    display: flex;
+
+}
+
+.about-section h1 {
+    font-size: 64px;
+    line-height: 85px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.about-section h2 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    text-align: justify;
+
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: justify;
+    color: rgba(39, 33, 66, 0.7);
+}
+
+.about-section-content {
+    margin: 30px;
+}
+
+.project-link {
+
+    border-radius: 4px;
+    padding: 18px 30px;
+
+}
+
+
+
+@media (max-width: 996px) {
     .text-1 {
         font-size: 60px;
     }
@@ -165,6 +208,7 @@ img {
     .text-3 {
         font-size: 18px;
     }
+
 
     .crm {
         margin-bottom: 5px;
@@ -178,6 +222,57 @@ img {
         text-align: center;
     }
 
+    .about-section {
+        text-align: center;
+        flex-flow: row-reverse;
+        padding: 0;
+
+    }
+
+    .info {
+        order: 2;
+    }
+
+    .me {
+        order: 1;
+
+    }
+
+    .photo {
+        width: 50%;
+
+    }
+
+    .about-section h1 {
+        font-size: 50px;
+        line-height: 70px;
+        text-align: center;
+        padding: 0;
+
+    }
+
+    .about-section h2 {
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        padding: 0;
+
+    }
+
+    .about-section p {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        padding: 0;
+
+    }
+
+
+    .project-link {
+        display: block;
+        padding: 0;
+    }
+
     .links:hover {
         border: 4px solid #915fec;
         background-color: var(--btnhover);
@@ -189,6 +284,7 @@ img {
         background-color: var(--btnhover);
         color: white;
     }
+
 
 }
 
@@ -206,9 +302,9 @@ img {
     }
 
     .crm {
-        margin-bottom: 5px;
-        width: 15px;
-        height: 10px;
+        margin-bottom: 3px;
+        width: 22px;
+        height: 15px;
         border-radius: 10%;
     }
 
@@ -261,13 +357,54 @@ img {
         background-color: var(--btnhover);
         color: white;
     }
+
+    .about-section {
+        text-align: center;
+        padding: 0;
+        flex-flow: row-reverse;
+    }
+
+    .info {
+        order: 2;
+        padding: 0;
+    }
+
+    .me {
+        order: 1;
+        padding: 0;
+    }
+
+    .photo {
+        width: 40%;
+        padding: 0;
+
+    }
+
+
+    .about-section h1 {
+        font-size: 30px;
+        line-height: 40px;
+
+    }
+
+    .about-section h2 {
+        font-size: 15px;
+        line-height: 14px;
+
+    }
+
+    .about-section p {
+        font-size: 12px;
+        line-height: 15px;
+
+    }
 }
 
 @media (min-width: 1300px) {
     .crm {
-        margin-bottom: 10px;
-        width: 28px;
-        height: 19px;
+        margin-bottom: 4px;
+        width: 21px;
+        height: 14px;
         border-radius: 10%;
     }
 

@@ -13,6 +13,19 @@ body {
     background-color: var(--primary-color);
 }
 
+.main-page {
+    margin: 30px;
+    height: 900px;
+}
+
+.main-content {
+    text-align: center;
+}
+
+
+
+
+
 h2,
 h1,
 h3 {
@@ -22,15 +35,17 @@ h3 {
 }
 
 
+
 .crm {
-    margin-bottom: 3px;
-    width: 22px;
-    height: 16px;
+    margin-bottom: 9px;
+    width: 23px;
+    height: 18px;
     border-radius: 20%;
 }
 
 .text-1 {
-    font-size: 90px;
+    font-size: 75px;
+    font-weight: 700;
     color: var(--primary-color);
     font-family: 'Playfair Display', serif;
 }
@@ -238,6 +253,11 @@ img {
         font-size: 18px;
     }
 
+    .email {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
 
     .crm {
         margin-bottom: 5px;
@@ -342,8 +362,8 @@ img {
 
     .crm {
         margin-bottom: 3px;
-        width: 22px;
-        height: 15px;
+        width: 16px;
+        height: 12px;
         border-radius: 10%;
     }
 
@@ -444,13 +464,20 @@ img {
         font-size: 45px;
         line-height: 60px;
     }
+
+    .email {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+
 }
 
 @media (min-width: 1300px) {
     .crm {
-        margin-bottom: 4px;
-        width: 21px;
-        height: 14px;
+        margin-bottom: 7px;
+        width: 26px;
+        height: 19px;
         border-radius: 10%;
     }
 

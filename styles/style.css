@@ -14,12 +14,16 @@ body {
 }
 
 .main-page {
-    margin: 30px;
+
+
+
     height: 900px;
 }
 
 .main-content {
+    display: table-cell;
     text-align: center;
+    vertical-align: center;
 }
 
 

@@ -16,7 +16,7 @@ body {
 
 .main-content {
     height: 900px;
-    padding: 80px 20px;
+    padding: 60px 20px;
 }
 
 h2,
@@ -209,7 +209,7 @@ p {
 }
 
 .about-section {
-    padding: 160px 20px;
+    padding: 60px 20px;
     display: flex;
 
 }
@@ -238,7 +238,7 @@ p {
 }
 
 .about-section-content {
-    margin: 30px;
+    margin: 20px;
 }
 
 .project-link {
@@ -253,8 +253,8 @@ p {
 
 .content h1 {
     font-weight: 700;
-    font-size: 55px;
-    line-height: 85px;
+    font-size: 50px;
+    line-height: 40px;
 }
 
 .content h3 {

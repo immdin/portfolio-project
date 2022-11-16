@@ -13,22 +13,10 @@ body {
     background-color: var(--primary-color);
 }
 
-.main-page {
-
-
-
-    height: 900px;
-}
-
 .main-content {
-    display: table-cell;
-    text-align: center;
-    vertical-align: center;
+    height: 900px;
+    padding: 80px 20px;
 }
-
-
-
-
 
 h2,
 h1,
@@ -37,8 +25,6 @@ h3 {
     text-align: center;
 
 }
-
-
 
 .crm {
     margin-bottom: 9px;
@@ -74,7 +60,7 @@ h3 {
 
 .navigation-links {
     display: flex;
-    margin-top: 40px;
+    margin-top: 125px;
     justify-content: center;
 }
 
@@ -133,6 +119,52 @@ h3 {
     text-decoration: none;
 }
 
+.arrow-8 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 200px auto;
+    cursor: pointer;
+}
+
+.arrow-8:before,
+.arrow-8:after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 50%;
+    height: 50%;
+    border-left: 10px solid var(--primary-color);
+    border-bottom: 10px solid var(--primary-color);
+    animation: arrow-8 3s linear infinite;
+}
+
+.arrow-8:after {
+    animation: arrow-8 3s linear infinite -1.5s;
+}
+
+@keyframes arrow-8 {
+    0% {
+        opacity: 0;
+        transform: translate(0, -53px) rotate(-45deg);
+    }
+
+    10%,
+    90% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(0, 0) rotate(-45deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0, 53px) rotate(-45deg);
+    }
+}
+
 .about-paragraphs {
     margin: 30px 40px;
 }
@@ -166,12 +198,11 @@ p {
     color: #7f3bfd;
 }
 
-img {
+.images {
     width: 90%;
     box-shadow: var(--box-shadow);
     margin-bottom: 10px;
 }
-
 
 .about-section {
     padding: 160px 20px;
@@ -207,7 +238,6 @@ img {
 }
 
 .project-link {
-
     border-radius: 4px;
     padding: 18px 30px;
 
@@ -215,12 +245,11 @@ img {
 
 .content-container {
     margin: 30px;
-
 }
 
 .content h1 {
     font-weight: 700;
-    font-size: 64px;
+    font-size: 55px;
     line-height: 85px;
 }
 
@@ -230,20 +259,25 @@ img {
     font-size: 24px;
     line-height: 1.5;
     margin: 20px 0;
-
-
 }
 
 .content p {
     font-size: 14px;
     font-weight: 400;
     font-family: 'Poppins';
-
 }
 
+.img-fluid {
+    max-width: 76% !important;
+}
 
-
+/*media query*/
 @media (max-width: 996px) {
+
+    .main-content {
+        height: 400px;
+    }
+
     .text-1 {
         font-size: 60px;
     }
@@ -262,7 +296,6 @@ img {
         margin-bottom: 15px;
     }
 
-
     .crm {
         margin-bottom: 5px;
         width: 19px;
@@ -280,6 +313,10 @@ img {
         flex-flow: row-reverse;
         padding: 0;
 
+    }
+
+    .arrow {
+        display: none;
     }
 
     .info {
@@ -320,7 +357,6 @@ img {
 
     }
 
-
     .project-link {
         display: block;
         padding: 0;
@@ -352,6 +388,10 @@ img {
 }
 
 @media (max-width: 767px) {
+    .main-content {
+        height: 350px;
+    }
+
     .text-1 {
         font-size: 40px;
     }
@@ -362,6 +402,10 @@ img {
 
     .text-3 {
         font-size: 12px;
+    }
+
+    .arrow {
+        display: none;
     }
 
     .crm {
@@ -378,7 +422,6 @@ img {
 
     img {
         width: 60%;
-
     }
 
     .about-paragraphs {
@@ -391,22 +434,18 @@ img {
         border: 2px solid #8443fc;
         margin: 5px auto;
         padding: 10px 5px;
-
     }
 
     .navigation-links {
         margin: 15px;
         font-size: 13px;
-
     }
-
 
     .navigation-links a {
         border-radius: 2px;
         margin: 10px;
         border: 2px solid #8443fc;
         padding: 13px 7px;
-
     }
 
     .navigation-links a:hover {
@@ -443,28 +482,22 @@ img {
 
     }
 
-
     .about-section h1 {
         font-size: 30px;
         line-height: 40px;
-
     }
 
     .about-section h2 {
         font-size: 15px;
         line-height: 14px;
-
     }
 
     .about-section p {
         font-size: 12px;
         line-height: 15px;
-
     }
 
     .content h1 {
-
-
         font-size: 45px;
         line-height: 60px;
     }
@@ -473,8 +506,6 @@ img {
         font-size: 18px;
         margin-bottom: 10px;
     }
-
-
 }
 
 @media (min-width: 1300px) {
@@ -487,12 +518,10 @@ img {
 
     .about-paragraphs {
         margin: 35px 45px;
-
     }
 
     img {
         width: 80%;
-
     }
 
     .links:hover {
@@ -507,12 +536,8 @@ img {
         color: white;
     }
 
-
-
     .content p {
         font-size: 20px;
-
-
     }
 
 }

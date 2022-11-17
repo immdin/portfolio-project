@@ -58,7 +58,7 @@ footer h4 {
 }
 
 .text-3 {
-    font-size: 24px;
+    font-size: 20px;
     opacity: 0.7;
     font-family: 'Poppins';
     font-weight: 400;
@@ -194,6 +194,53 @@ p {
 
 .email:hover {
 
+    color: #5728ad;
+}
+form{
+    margin:20px 80px;
+}
+
+.contact-container{
+    
+        padding: 20px 80px;
+}
+
+.btn-style {
+    display: block;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    border: 4px solid #8443fc;
+    
+    margin: 20px;
+    padding: 10px 60px;
+}
+.btn-style:hover {
+    border: 4px solid #915fec;
+    background-color: var(--btnhover);
+    color: white;
+}
+
+.contact-text{
+    text-align: left;
+    font-size: 24px;
+    opacity: 0.7;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.contacts-link {
+    display: flex;
+    justify-content: left;
+    color: var(--primary-color);
+    font-size: 25px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.contacts-link:hover {
     color: #5728ad;
 }
 
@@ -336,6 +383,17 @@ footer .social-links a:hover {
         font-size: 18px;
     }
 
+    .contact-text{
+        font-size: 18px;
+        justify-content: center;
+    }
+    .contacts-link {
+        font-size: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+
     .email {
         font-size: 20px;
         margin-bottom: 15px;
@@ -413,6 +471,11 @@ footer .social-links a:hover {
         color: white;
     }
 
+    .btn-style:hover {
+        border: 4px solid #915fec;
+        background-color: var(--btnhover);
+        color: white;
+    }
     .navigation-links a:hover {
         border: 4px solid #915fec;
         background-color: var(--btnhover);
@@ -420,7 +483,7 @@ footer .social-links a:hover {
     }
 
     .content h3 {
-        font-size: 20px;
+        font-size: 14px;
         line-height: 1.5;
 
     }
@@ -448,6 +511,19 @@ footer .social-links a:hover {
     .text-3 {
         font-size: 12px;
     }
+    .contact-text
+    {
+        margin-top: 30px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .contacts-link{
+        justify-content: center;
+    }
+
+    form{
+        margin:0;
+    }
 
     h4 {
         font-size: 26px;
@@ -456,7 +532,11 @@ footer .social-links a:hover {
     footer .contact-box .links {
         font-size: 18px;
     }
-
+    footer .social-links a {
+        
+        padding: 5px 10px;
+        font-size: 14px;
+    }
     .arrow {
         display: none;
     }
@@ -488,6 +568,14 @@ footer .social-links a:hover {
         margin: 5px auto;
         padding: 10px 5px;
     }
+    .btn-style {
+        display: block;
+        
+        border: 2px solid #8443fc;
+        margin: 5px auto;
+        padding: 10px 60px;
+       
+    }
 
     .navigation-links {
         margin: 15px;
@@ -507,7 +595,7 @@ footer .social-links a:hover {
         color: white;
     }
 
-    .links:hover {
+    .links,.btn-style:hover {
         border: 2px solid #915fec;
         background-color: var(--btnhover);
         color: white;
@@ -554,6 +642,13 @@ footer .social-links a:hover {
         font-size: 45px;
         line-height: 60px;
     }
+    .content p {
+        font-size: 15px;}
+    .email {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
 
     .email {
         font-size: 18px;
@@ -576,6 +671,9 @@ footer .social-links a:hover {
 
     img {
         width: 80%;
+    }
+    form{
+        margin:20px 50px;
     }
 
     .links:hover {
